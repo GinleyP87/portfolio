@@ -8,10 +8,11 @@
     --colorB: #D5C1AB;
     --colorC: #2A2A2A;
     --colorD: #608AEA;
+    --colorE: #C8EBFF;
 }
 
 body {
-    background-color:antiquewhite
+    background-color:rgb(190, 213, 255)
 }
 header {
     background-color: var(--colorB);
@@ -31,7 +32,7 @@ header h1 {
     background: var(--colorA);
     font-size: 35px;
     padding: 5px 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: cambria;
     border-radius: 0 60px 8px 0;
 }
 
@@ -48,16 +49,16 @@ header nav ul {
 }
 
 header nav ul li {
-    margin: 0 7px;
+    margin: 0 6px;
 }
 
 header nav ul li a{
     color:var(--colorC);
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
-    padding: 6px 13px;
-    border-top: 1px solid var(--colorA);
-    border-bottom: 4px solid var(--colorA);
+    padding: 8px 5px;
+    border-top: 2px solid var(--colorA);
+    border-bottom: 5px solid var(--colorA);
     border-radius: 20px 50px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-decoration: none;
@@ -65,18 +66,31 @@ header nav ul li a{
 
 header nav ul li a:hover {
     background: var(--colorA);
-    border-top: 1px solid var(--colorD);
-    border-bottom: 4px solid var(--colorD);
+    border-top: 2px solid var(--colorD);
+    border-bottom: 5px solid var(--colorD);
     border-radius: 50px 20px;
     color: var(--colorD);
     transition: 0.9s;
 }
 
 /* hero */
+.hero {
+    background-image: url(../images/blue-wood-texture-background.jpg);
+    height: 150px;
+    display: flex;
+    border-bottom: 4px solid var(--colorA);
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
 .hero h2 {
     font-size: 27px;
-    text-align: right;
-    line-height: 2.5
+    line-height: 4;
+    padding: 0px 15px 0px 0px;
+    color: var(--colorE);
+    font-family: Cambria;
+
+
 }
 /* title and input SECTION styles */ 
 .section {
@@ -89,19 +103,21 @@ header nav ul li a:hover {
 .section-title {
     font-size: 38px;
     font-weight: bold;
-    font-family: var(--colorD);
+    font-family: Cambria;
     width: 15%;
     border-bottom: solid black 1px;
     border-right: solid black 4px;
     border-radius: 50px 15px;
     text-align: right;
     padding-right: 25px;
+    padding-bottom: 4px;
     margin-right: 10px;
 }
 .section-input {
-    width: 90%;
+    width: 80%;
     padding-left: 10px;
     justify-content: space-between;
+    display:flex;
 }
 
 .section-input p {
@@ -113,14 +129,85 @@ header nav ul li a:hover {
 }
 /* about-me SECTION */
 
+.about-me {
+    border-bottom: 3px solid var(--colorC);    
 
+}
+
+.about-me p{
+    width:65%;
+   
+}
+.about-pic{
+    height: 290px;
+    border: solid 4px var(--colorC);
+    border-radius: 5px;
+
+
+}
 /* projects SECTION */
 
+.project-block {
+    width: 90%;
+    display:flex;
+    justify-content: center;
+}
+.grid-form {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: repeat(2, 150px);
+    grid-gap: 5px;
+    grid-auto-flow: dense;
+}
+
+.project-1 {
+    grid-column: 1 / span 4;
+    grid-row: 1/ span 3;
+}
+
+.pic-link {
+    border: 3px solid var(--colorD);
+    border-radius: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: var(--colorA);
+}
+
+.pic {
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    transition: 0.9s;
+    border-radius: 20px 50px;
+}
+
+.pic:hover {
+    opacity: 1;
+}
+
+.pic-text {
+    position: absolute;
+    width: 100px;
+    margin-left: 15px;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    background: var(--colorD);
+    border-radius: 20px 50px;
+    text-align: left;
+    color: var(--colorB);
+}
+
+.pic-text h3 {
+    font-size: 14px;
+    font-family: Cambria;
+}
 
 /* contact-info SECTION */
 
 .section-contact {
-    border-top: 2px solid var(--colorC);
+    border-top: 3px solid var(--colorC);
     align-content: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
@@ -133,26 +220,124 @@ header nav ul li a:hover {
 
 .section-contact a {
     padding: 10px 15px 10px 15px;
-    margin: 10px 20px 10px 10px;
-    border-top: 1px solid var(--colorA);
-    border-bottom: 4px solid var(--colorA);
+    margin: 0px 20px 10px 50px;
+    border-top: 2px solid var(--colorA);
+    border-bottom: 5px solid var(--colorA);
     border-radius: 20px 50px;
     text-decoration: none;
     line-height: 4.5;
     font-weight: bold;
-    justify-content:space-evenly;
-    font-size: 22px;
+    justify-content:space-around;
+    font-size: 18px;
     color: var(--colorC)
 
+}
+
+.info {
+   
 }
 
 .section-contact a:hover {
 
     background: var(--colorA);
     color: var(--colorD);
-    border-top: 1px solid var(--colorD);
-    border-bottom: 4px solid var(--colorD);
+    border-top: 2px solid var(--colorD);
+    border-bottom: 5px solid var(--colorD);
     border-radius: 50px 20px;
     transition: 0.9s;
     text-decoration: none;
+}
+
+/* footer style */
+
+footer {
+    text-align: right;
+    background: var(--colorB);
+    border-top: 4px solid var(--colorA);
+    padding: 30px 20px 5px 0px 
+}
+
+/* footer style */
+
+footer {
+    text-align: right;
+    background: var(--colorB);
+    border-top: 4px solid var(--colorA);
+    padding: 30px 20px 5px 0px 
+}
+
+/* media queries */
+
+
+
+@media screen and (max-width: 1080px) {
+
+.section-contact a{
+    margin: 0px 20px 10px 20px;
+}
+}
+
+/* smaller laptop screens and down */
+
+@media screen and (max-width: 980px) {
+
+.section-title {
+    font-size: 32px;
+}
+
+.section-contact a {
+    margin: 10px 10px 10px 10px       
+
+}
+
+.grid-form {
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 150px);
+    
+}
+
+.project-1 {
+    grid-column: 1 / span 2;
+    grid-row: 1/ span 3;
+}
+
+project-2 {
+    grid-column: 1 / span 1;
+    grid-row: 4/ span 1;
+}
+
+.project-3 {
+    grid-column: 2 / span 1;
+    grid-row: 4/ span 1;
+}
+
+.project-4 {
+    grid-column: 1 / span 1;
+    grid-row: 5/ span 1;
+}
+
+.project-5 {
+    grid-column: 2 / span 1;
+    grid-row: 5/ span 1;
+}
+/* tablets and down */
+
+@media screen and (max-width: 768px) {
+
+header {
+    
+}
+.section-contact a {
+    
+    margin: 10px 10px 10px 10px;
+    padding: 10px 6px 10px 7px;
+    font-size: 16px;
+} 
+
+}
+
+/* phones and smaller*/ 
+
+@media screen and (max-width: 575px) {
+
 }
