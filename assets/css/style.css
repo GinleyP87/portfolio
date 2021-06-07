@@ -143,6 +143,7 @@ header nav ul li a:hover {
     height: 290px;
     border: solid 4px var(--colorC);
     border-radius: 5px;
+    margin: 0px 15px 0px 30px;
 
 
 }
