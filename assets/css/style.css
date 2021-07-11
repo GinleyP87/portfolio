@@ -15,7 +15,7 @@ body {
     background-color:rgb(190, 213, 255)
 }
 header {
-    background-color: var(--colorB);
+    background-color: slategray;
     padding: 30px 30px 15px 0px;
     display: flex;
     justify-content: space-between;
@@ -251,16 +251,7 @@ header nav ul li a:hover {
 
 footer {
     text-align: right;
-    background: var(--colorB);
-    border-top: 4px solid var(--colorA);
-    padding: 30px 20px 5px 0px 
-}
-
-/* footer style */
-
-footer {
-    text-align: right;
-    background: var(--colorB);
+    background: slategray;;
     border-top: 4px solid var(--colorA);
     padding: 30px 20px 5px 0px 
 }
@@ -324,6 +315,7 @@ footer {
 
 header {
 }
+
 .section-contact a {
     
     margin: 10px 10px 10px 10px;
@@ -336,6 +328,7 @@ header {
 /* phones and smaller*/ 
 
 @media screen and (max-width: 575px) {
+
 .about-me{
     display: flex;
     flex-wrap: wrap;
@@ -373,4 +366,5 @@ header {
 .section-title {
     padding-right: 50px
 }
+
 }
