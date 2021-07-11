@@ -130,14 +130,11 @@ header nav ul li a:hover {
 /* about-me SECTION */
 
 .about-me {
-    border-bottom: 3px solid var(--colorC);    
-     
-
+    border-bottom: 3px solid var(--colorC);
 }
 
 .about-me p{
     width:65%;
-   
 }
 .about-pic{
     height: 290px;
@@ -289,7 +286,6 @@ footer {
 
 .section-contact a {
     margin: 10px 10px 10px 10px       
-
 }
 
 .grid-form {
@@ -303,7 +299,7 @@ footer {
     grid-row: 1/ span 3;
 }
 
-project-2 {
+.project-2 {
     grid-column: 1 / span 1;
     grid-row: 4/ span 1;
 }
@@ -327,7 +323,6 @@ project-2 {
 @media screen and (max-width: 768px) {
 
 header {
-
 }
 .section-contact a {
     
