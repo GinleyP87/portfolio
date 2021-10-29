@@ -232,9 +232,6 @@ header nav ul li a:hover {
 
 }
 
-.info {
-   
-}
 
 .section-contact a:hover {
 
@@ -309,12 +306,11 @@ footer {
     grid-column: 2 / span 1;
     grid-row: 5/ span 1;
 }
+}
 /* tablets and down */
 
 @media screen and (max-width: 768px) {
 
-header {
-}
 
 .section-contact a {
     
@@ -366,5 +362,4 @@ header {
 .section-title {
     padding-right: 50px
 }
-
 }
